@@ -8,30 +8,37 @@
   services.samba = {
     enable = true;
     openFirewall = true;  # Abre los puertos necesarios en el firewall
-    settings = ''
-      [global]
-      workgroup = WORKGROUP
-      server string = NixOS Samba Server
-      security = user
-      map to guest = Bad User
-      log file = /var/log/samba/log.%m
-      max log size = 50
-      server role = standalone server
-      dns proxy = no
 
-      [Public]
-      path = /srv/samba/public
-      browseable = yes
-      read only = no
-      guest ok = yes
+    # Configuración de Samba
+    settings = {
+      "global" = {
+        workgroup = "WORKGROUP";
+        serverString = "NixOS Samba Server";
+        security = "user";
+        mapToGuest = "Bad User";
+        logFile = "/var/log/samba/log.%m";
+        maxLogSize = 50;
+        serverRole = "standalone server";
+        dnsProxy = "no";
+      };
 
-      [Private]
-      path = /srv/samba/private
-      browseable = yes
-      read only = no
-      guest ok = no
-      valid users = alex
-    '';
+      # Compartir directorio público
+      "Public" = {
+        path = "/srv/samba/public";
+        browseable = true;
+        readOnly = false;
+        guestOk = true;
+      };
+
+      # Compartir directorio privado
+      "Private" = {
+        path = "/srv/samba/private";
+        browseable = true;
+        readOnly = false;
+        guestOk = false;
+        validUsers = [ "alex" ];  # Usuario permitido para acceder
+      };
+    };
   };
 
   # Configurar carpetas compartidas con permisos correctos
