@@ -27,4 +27,15 @@
       serif = [ "Noto Serif" ];
     };
   };
+  
+  boot.loader.grub = {
+    enable = true;
+    devices = [ "/dev/sda" ]; # Cambia "/dev/sdX" por el disco donde instalarás GRUB, como "/dev/sda"
+    #useOSProber = true;  # Opcional, útil si tienes otro sistema operativo instalado (dual boot)
+  };
+
+  boot.loader.timeout = 5; # Tiempo en segundos antes de arrancar automáticamente
+
+  # Asegurar que el sistema es UEFI si es necesario
+  boot.loader.efi.canTouchEfiVariables = true;
 }
