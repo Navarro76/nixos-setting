@@ -21,8 +21,7 @@
     amule
     onlyoffice-bin
     smplayer
-    koodo-reader
-    nerdfonts     # Fuentes necesarias para Powerlevel10k
+    #koodo-reader
   ];
 
   # 2. NO configurar Zsh en Home Manager (Chezmoi lo manejará)
