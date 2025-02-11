@@ -27,7 +27,7 @@
       serif = [ "Noto Serif" ];
     };
   };
-  
+
   boot.loader.grub = {
     enable = true;
     devices = [ "/dev/sda" ]; # Cambia "/dev/sdX" por el disco donde instalarás GRUB, como "/dev/sda"
