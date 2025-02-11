@@ -7,7 +7,7 @@
   # Soporte de aceleración OpenGL y Vulkan
   hardware.opengl = {
     enable = true;
-    driSupport = true;
+    #driSupport = true;  #deprecated
     driSupport32Bit = true;  # Habilitar soporte para aplicaciones de 32 bits (Ej: Steam, Wine)
     extraPackages = with pkgs; [
       vaapiVdpau
