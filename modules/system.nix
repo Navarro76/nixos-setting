@@ -28,6 +28,10 @@
     };
   };
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.hack
+  ];
+
   boot.loader.grub = {
     enable = true;
     devices = [ "/dev/sda" ]; # Cambia "/dev/sdX" por el disco donde instalarás GRUB, como "/dev/sda"
