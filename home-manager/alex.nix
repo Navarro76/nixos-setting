@@ -14,8 +14,8 @@
     zsh           # Shell
     zsh-autosuggestions
     zsh-syntax-highlighting
-    fast-syntax-highlighting
-    powerlevel10k
+    zsh-fast-syntax-highlighting
+    zsh-powerlevel10k
     tmux
     navi
     amule
