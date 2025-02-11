@@ -8,7 +8,7 @@
   services.samba = {
     enable = true;
     openFirewall = true;  # Abre los puertos necesarios en el firewall
-    extraConfig = ''
+    settings = ''
       [global]
       workgroup = WORKGROUP
       server string = NixOS Samba Server
