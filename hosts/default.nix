@@ -21,9 +21,6 @@
   # Nombre del sistema
   networking.hostName = "nixos-alex";
 
-  # Habilitar NetworkManager
-  networking.networkmanager.enable = true;
-
   # Versión del sistema
   system.stateVersion = "23.11";
 }
