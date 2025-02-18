@@ -43,7 +43,7 @@
 
   # Configurar carpetas compartidas con permisos correctos
   systemd.tmpfiles.rules = [
-    "d /srv/samba/public  2775 root users -"
+    "d /srv/samba/public  2777 root users -"
     "d /srv/samba/private 2770 root users -"
   ];
 

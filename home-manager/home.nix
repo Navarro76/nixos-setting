@@ -33,6 +33,7 @@
     # siéntase libre de añadir las tuyas propias o eliminar algunas
 
     neovim
+    wmname
     #git
     chezmoi       # Manejo de dotfiles
     calibre       # Lector de ebooks
@@ -161,6 +162,7 @@
       urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
     };
   };
+
 
   # Este valor determina la versión de Home Manager con la que tu
   # configuración es compatible. Esto ayuda a evitar interrupciones
