@@ -6,6 +6,7 @@
     mpd       # Music Player Daemon
     spaceFM   # Administrador de archivos ligero
     feh       # Visualizador de imágenes
+    kitty
   ];
 
   services.pipewire = {
@@ -25,5 +26,6 @@
         name "MPD PulseAudio"
       }
     '';
-  }; 
+  };
+  
 }

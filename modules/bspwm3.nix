@@ -7,7 +7,7 @@
       enable = true;
       xkb.layout = "es";  # Configuración de teclado para Xorg
       displayManager.lightdm.enable = true;  # Habilitar LightDM
-       windowManager.bspwm = {
+      windowManager.bspwm = {
         enable = true;  # Habilitar BSPWM
         configFile = "/home/alex/.config/bspwm/bspwmrc";
         sxhkd = {

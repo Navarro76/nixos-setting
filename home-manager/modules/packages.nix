@@ -1,0 +1,62 @@
+{ config, pkgs, ... }:
+
+{
+  home.packages = with pkgs; [
+    neovim
+    wmname
+    chezmoi
+    calibre
+    ncmpcpp
+    zsh
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-fast-syntax-highlighting
+    zsh-powerlevel10k
+    tmux
+    navi
+    amule
+    onlyoffice-bin
+    smplayer
+    nnn
+    zip
+    xz
+    unzip
+    p7zip
+    ripgrep
+    jq
+    yq-go
+    eza
+    fzf
+    mtr
+    iperf3
+    dnsutils
+    ldns
+    aria2
+    socat
+    nmap
+    ipcalc
+    cowsay
+    file
+    which
+    tree
+    gnused
+    gnutar
+    gawk
+    zstd
+    gnupg
+    nix-output-monitor
+    hugo
+    glow
+    btop
+    iotop
+    iftop
+    strace
+    ltrace
+    lsof
+    sysstat
+    lm_sensors
+    ethtool
+    pciutils
+    usbutils
+  ];
+}
